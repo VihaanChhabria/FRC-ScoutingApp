@@ -1,0 +1,98 @@
+.UI-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Parent-Container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3rem
+}
+
+.Child-Container {
+    background-color: #edf2f7;
+    padding: 1rem;
+    border-radius: 0.37rem
+}
+
+.Label {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Counter-Label {
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5cm;
+    display: flex;
+    align-items: center;
+}
+
+.Input-Field {
+    width: 97%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.37rem;
+    padding: 0.5rem;
+    outline: none;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    resize: none;
+}
+
+.Button {
+    flex: 1;
+    background-color: #4299e1;
+    color: #fff;
+    border-radius: 0.37rem;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    height: 2.5cm;
+}
+
+.Save-Button {
+    background-color: #4299e1;
+    color: #fff;
+    border-radius: 0.37rem;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    width: 100%;
+}
+
+.Button:hover {
+    background-color: #3182ce
+}
+
+.Save-Button:hover {
+    background-color: #3182ce
+}
+
+.Group-Container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.125rem
+}
+
+.Sub-Label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Button-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Checkbox {
+    width: 40px;
+    height: 50px;
+    vertical-align:middle;
+}

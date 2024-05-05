@@ -1,0 +1,247 @@
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width; initial-scale=0.6;">
+    <style type="text/css">
+        .App-body {
+    height: 100vh
+}
+
+.UI-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Parent-Container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3rem
+}
+
+.Child-Container {
+    background-color: #edf2f7;
+    padding: 1rem;
+    border-radius: 0.37rem
+}
+
+.Label {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Counter-Label {
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5cm;
+    display: flex;
+    align-items: center;
+}
+
+.Input-Field {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 0.37rem;
+    padding: 0.5rem;
+    outline: none;
+    box-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    resize: none;
+}
+
+.Button {
+    flex: 1;
+    background-color: #4299e1;
+    color: #fff;
+    border-radius: 0.37rem;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    height: 2.5cm;
+}
+
+.Save-Button {
+    background-color: #4299e1;
+    color: #fff;
+    border-radius: 0.37rem;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    width: 100%;
+}
+
+.Button:hover {
+    background-color: #3182ce
+}
+
+.Save-Button:hover {
+    background-color: #3182ce
+}
+
+.Group-Container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.125rem
+}
+
+.Sub-Label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Button-Container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Checkbox {
+    width: 40px;
+    height: 50px;
+    vertical-align:middle;
+}
+    </style>
+  </head>
+
+  <body class="App-body">
+    <div class="UI-container">
+      <div class="Parent-Container">
+        <div class="Child-Container">
+          <label class="Label" for="matchNumber">Match Number</label
+          ><input autocomplete='off' type="text" id="matchNumber" class="Input-Field" >
+        </div>
+        <div class="Child-Container">
+          <label class="Label" for="teamNumber">Team Number</label
+          ><input autocomplete='off' type="text" id="teamNumber" class="Input-Field" >
+        </div>
+        <div class="Child-Container">
+          <label class="Label" for="initials">Scouter Initials</label
+          ><input autocomplete='off' type="text" id="initials" class="Input-Field" >
+        </div>
+        <div class="Child-Container">
+          <label class="Label" for="autoShotsMade">Auto Shots Made</label>
+          <div class="Group-Container">
+            <div>
+              <label class="Sub-Label">Amp</label>
+              <div class="Button-Container">
+                <button class="Button" id="autoAmpN">-</button>
+                <label class="Counter-Label" id="autoAmpLab">0</label>
+                <button class="Button" id="autoAmpP">+</button>
+              </div>
+            </div>
+            <div>
+              <label class="Sub-Label" for="autoSpeaker">Speaker</label>
+              <div class="Button-Container">
+                <button class="Button" id="autoSpeakerN">-</button>
+                <label class="Counter-Label" id="autoSpeakerLab">0</label>
+                <button class="Button" id="autoSpeakerP">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Child-Container">
+          <label class="Label" for="teleopShotsMade">Teleop Shots Made</label>
+          <div class="Group-Container">
+            <div>
+              <label class="Sub-Label" for="teleopAmp">Amp</label>
+              <div class="Button-Container">
+                <button class="Button" id="teleopAmpN">-</button>
+                <label class="Counter-Label" id="teleopAmpLab">0</label>
+                <button class="Button" id="teleopAmpP">+</button>
+              </div>
+            </div>
+            <div>
+              <label class="Sub-Label" for="teleopSpeaker">Speaker</label>
+              <div class="Button-Container">
+                <button class="Button" id="teleopSpeakerN">-</button>
+                <label class="Counter-Label" id="teleopSpeakerLab">0</label>
+                <button class="Button" id="teleopSpeakerP">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Child-Container">
+          <label class="Label" for="shotsMadeTrap">Shots Made Trap</label>
+          <div class="Button-Container">
+            <button class="Button" id="trapN">-</button>
+            <label class="Counter-Label" id="trapLab">0</label>
+            <button class="Button" id="trapP">+</button>
+          </div>
+        </div>
+        <div class="Child-Container">
+          <label class="Label">Endgame/Misc</label>
+          <div class="Group-Container">
+            <div>
+              <label class="Sub-Label" for="climbed">Climbed</label
+              ><label
+                ><input autocomplete='off' class="Checkbox" type="checkbox" id="climbed" ><span></span
+              ></label>
+            </div>
+            <div>
+              <label class="Sub-Label" for="buddyClimb">Buddy Climb</label
+              ><label
+                ><input autocomplete='off' class="Checkbox" type="checkbox" id="buddyClimb" ><span></span
+              ></label>
+            </div>
+            <div>
+              <label class="Sub-Label" for="brokeDown">Broke Down</label
+              ><label
+                ><input autocomplete='off' class="Checkbox" type="checkbox" id="brokeDown" ><span></span
+              ></label>
+            </div>
+          </div>
+        </div>
+        <div class="Child-Container">
+          <label class="Label" for="comments">Comments</label
+          ><textarea id="comments" class="Input-Field"></textarea>
+        </div>
+        <div class="Child-Container">
+          <button class="Save-Button" id="save">Save</button>
+        </div>
+      </div>
+    </div>
+    <script>
+        function createCounter(baseName) {
+    const label = document.getElementById(baseName + "Lab");
+
+    const increaseButton = document.getElementById(baseName + "P");
+    const decreaseButton = document.getElementById(baseName + "N");
+
+    increaseButton.addEventListener("click", () => increase(label));
+    decreaseButton.addEventListener("click", () => decrease(label));
+
+    function increase(label) {
+        label.innerText = parseInt(label.innerText) + 1;
+    }
+
+    function decrease(label) {
+        const value = parseInt(label.innerText);
+        if (value > 0) {
+            label.innerText = value - 1;
+        }
+    }
+}
+
+
+const baseNames = [
+    "autoAmp",
+    "autoSpeaker",
+    "teleopAmp",
+    "teleopSpeaker",
+    "trap"
+]
+
+for (let index = 0; index < baseNames.length; index++) {
+    const baseName = baseNames[index];
+    console.log(baseName)
+    createCounter(baseName)
+}
+    </script>
+  </body>
+</html>
