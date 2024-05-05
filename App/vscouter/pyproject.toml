@@ -5,12 +5,12 @@ bundle = "com.example.vscouter"
 version = "0.0.1"
 url = "https://vscouter.example.com/vscouter"
 license = "MIT license"
-author = "Vihaan Chhabria"
-author_email = "chhabria.vihaan@gmail.com"
+author = "Vihaan C"
+author_email = "vihaan@vscouter.example.com"
 
 [tool.briefcase.app.vscouter]
 formal_name = "VScouter"
-description = "A scouting application for FRC made by Vihaan Chhabria."
+description = "A scouting app made for FRC."
 long_description = """More details about the app should go here.
 """
 icon = "src/vscouter/resources/vscouter"

@@ -5,7 +5,7 @@ VScouter
 `The BeeWare Project`_. **If you want to see more tools like Briefcase, please
 consider** `becoming a financial member of BeeWare`_.
 
-A scouting application for FRC made by Vihaan Chhabria.
+A scouting app made for FRC.
 
 .. _`Briefcase`: https://briefcase.readthedocs.io/
 .. _`The BeeWare Project`: https://beeware.org/

@@ -35,7 +35,7 @@ if __name__ == "__main__":
     thread.start()
 
     while True:
-        print("rin")
+        #print("rin")
         if keyboard.is_pressed("alt+`"):
             print("e")
             os._exit(0)
